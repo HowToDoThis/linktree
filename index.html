@@ -49,7 +49,6 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-image: url("https://w.wallhaven.cc/full/r2/wallhaven-r2g7rm.jpg");
             background-color: transparent;
             image-orientation: from-image;
             overflow: hidden;
@@ -101,7 +100,6 @@
             border-radius: 75px;
 
             background-size: cover;
-            background-image: url("https://c.tenor.com/NkAegm0IP8IAAAAC/popcat.gif");
             background-color: transparent;
         }
         .profileTitle {
@@ -194,7 +192,7 @@
     <!-- Master Root? -->
     <div class="root">
         <!-- Background -->
-        <div class="background"></div>
+        <div class="background" style="background-image: url('https://w.wallhaven.cc/full/r2/wallhaven-r2g7rm.jpg');"></div>
         <!-- Main -->
         <div class="main">
             <!-- Header -->
@@ -203,7 +201,9 @@
                     <a target="_blank" href="#">Xein's Linktree</a>
                 </div>
                 <div class="profileIcon">
-                    <div class="profileIconDetail"></div>
+                    <a target="_blank" href="https://c.tenor.com/NkAegm0IP8IAAAAC/popcat.gif">
+                        <div class="profileIconDetail" style="background-image: url(profile512.png);"></div>
+                    </a>
                 </div>
                 <h1 class="profileTitle">Xein</h1>
                 <p class="profileSubtitle">A Freelance Programmer</p>
@@ -211,7 +211,7 @@
             </div>
             <div class="links">
                 <!-- Images -->
-                <a target="_blank" class="button image" href="https://w.wallhaven.cc/full/z8/wallhaven-z8e8qy.jpg"><img src="https://w.wallhaven.cc/full/z8/wallhaven-z8e8qy.jpg"></a>
+                <a target="_blank" class="button image" href="hehe.png"><img src="hehe.png"></a>
                 <!-- Links -->
                 <a target="_blank" class="button" href="https://go.xein.xyz/github">
                     <i class="fa-2x fa-brands fa-github"></i>
@@ -234,13 +234,6 @@
                         <p>Xein#2146</p>
                     </div>
                 </a>
-                <a target="_blank" class="button" href="https://go.xein.xyz/discord">
-                    <i class="fa-2x fa-brands fa-discord"></i>
-                    <div>
-                        <h1>Discord</h1>
-                        <p>Github Community</p>
-                    </div>
-                </a>
                 <a target="_blank" class="button" href="https://go.xein.xyz/paypal">
                     <i class="fa-2x fa-brands fa-paypal"></i>
                     <div>
@@ -255,21 +248,35 @@
                         <p>Xein</p>
                     </div>
                 </a>
-                <a target="_blank" class="button" href="https://go.xein.xyz/telegram">
-                    <i class="fa-2x fa-brands fa-telegram"></i>
+                <a target="_blank" class="button" href="https://go.xein.xyz/twitter">
+                    <i class="fa-2x fa-brands fa-twitter"></i>
                     <div>
-                        <h1>Telegram</h1>
+                        <h1>Twitter</h1>
                         <p>@Xein0708</p>
                     </div>
                 </a>
         </div>
         <!-- Footer -->
         <div class="footer">
-            <a target="_blank" href="#" style="text-decoration: underline; margin-bottom: 4px;">Xein's Linktree</a>
+            <a target="_blank" href="https://github.com/HowToDoThis/linktree" style="text-decoration: underline; margin-bottom: 4px;">Xein's Linktree</a>
             <small>&copy; Xein All Rights Reserved</small>
         </div>
         </div>
     </div>
+
+    <script>
+        function copyToClipboard() {
+            // Get the text field
+            var element = event.target;
+            // Select the text field
+            element.select();
+            element.setSelectionRange(0, 99999); // For mobile devices
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(element.value);
+            // Alert the copied text
+            alert("Copied the text: " + element.value);
+            }
+    </script>
 
   </body>
 </html>
