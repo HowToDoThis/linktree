@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Meta - Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Xein0708">
+
+    <!-- Meta - Security Related -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="no-referrer">
+
+    <!-- Meta - OpenGraphs -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Xein's LinkTree!" />
+    <meta property="og:description" content="Find me more in here!" />
+    <meta property="og:url" content="https://linktree.xein.dev/" />
+    <meta property="og:image" content="https://linktree.xein.dev/profile512.png" />
+
+    <!-- Meta - Twitter/X -->
+    <!-- https://developer.x.com/en/docs/x-for-websites/cards/guides/getting-started -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@xein0708" />
+    <meta name="twitter:creator" content="@xein0708" />
+    <meta name="twitter:title" content="Xein's LinkTree!" />
+    <meta name="twitter:description" content="Find me more in here!" />
+    <meta name="twitter:image" content="https://linktree.xein.dev/profile512.png" />
+
     <link rel="icon" href="favicon.ico">
     <title>Xein's Linktree</title>
 
@@ -12,7 +35,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Sans+SC&family=Noto+Sans+TC&family=Varela+Round&display=swap" rel="stylesheet">
 
-    <script defer src="/assets/fontawesome/js/all.js"></script>
+    <script defer src="/assets/fontawesome-7.0.1/js/all.min.js"></script>
 
     <style>
         div {
@@ -61,7 +84,7 @@
         .main {
             position: relative;
             z-index: 2px;
-            margin-bottom: 100px;
+            margin-bottom: 25px;
         }
 
         .header {
@@ -189,10 +212,11 @@
       <strong>此网站需要Javascript支持以确保功能完善，不便之处尽请原谅</strong>
     </noscript>
 
-    <!-- Master Root? -->
+    <!-- Root -->
     <div class="root">
         <!-- Background -->
         <div class="background" style="background-image: url('https://w.wallhaven.cc/full/r2/wallhaven-r2g7rm.jpg');"></div>
+
         <!-- Main -->
         <div class="main">
             <!-- Header -->
@@ -227,20 +251,6 @@
                         <p>@HowToDoThis</p>
                     </div>
                 </a>
-                <a target="_blank" class="button" href="https://go.xein.xyz/gitlab">
-                    <i class="fa-2x fa-brands fa-gitlab"></i>
-                    <div>
-                        <h1>Gitlab</h1>
-                        <p>@HowToDoThis1</p>
-                    </div>
-                </a>
-                <a target="_blank" class="button" href="#">
-                    <i class="fa-2x fa-brands fa-discord"></i>
-                    <div>
-                        <h1>Discord</h1>
-                        <p>Xein#2146</p>
-                    </div>
-                </a>
                 <a target="_blank" class="button" href="https://go.xein.xyz/discord">
                     <i class="fa-2x fa-brands fa-discord"></i>
                     <div>
@@ -269,28 +279,35 @@
                         <p>@Xein0708</p>
                     </div>
                 </a>
+            </div>
         </div>
+
         <!-- Footer -->
         <div class="footer">
-            <a target="_blank" href="https://github.com/HowToDoThis/linktree" style="text-decoration: underline; margin-bottom: 4px;">Xein's Linktree</a>
-            <small>&copy; Xein All Rights Reserved</small>
-        </div>
+          <a target="_blank" href="https://github.com/HowToDoThis/linktree" style="text-decoration: underline; margin-bottom: 4px;">
+            <small>
+              &copy; Xein's LinkTree By Xein
+            </small>
+          </a>
+          <a target="_blank" href="https://wallhaven.cc/w/r2g7rm" style="text-decoration: underline; margin-bottom: 4px;">
+            <small>
+              &copy; Wallpaper by wallhaven
+            </small>
+          </a>
+          <a target="_blank" href="https://fontawesome.com/" style="text-decoration: underline; margin-bottom: 4px;">
+            <small>
+              &copy; Font Awesome 7.0.1 by FontAwesome
+            </small>
+          </a>
+
+          <small>
+            &copy; 2025 Xein. All rights reserved.
+          </small>
+          <small>
+            a small project inspired by lit.link, linktr.ee, etc
+          </small>
         </div>
     </div>
-
-    <script>
-        function copyToClipboard() {
-            // Get the text field
-            var element = event.target;
-            // Select the text field
-            element.select();
-            element.setSelectionRange(0, 99999); // For mobile devices
-            // Copy the text inside the text field
-            navigator.clipboard.writeText(element.value);
-            // Alert the copied text
-            alert("Copied the text: " + element.value);
-            }
-    </script>
 
   </body>
 </html>
